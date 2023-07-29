@@ -1,0 +1,32 @@
+#footerBox{
+    height: .5in;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b210271;
+}
+#logo{
+    display: flex;
+}
+#logo img{
+width: 50%;
+}
+#copyWrite img{
+    width: 80%;
+}
+#links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#links img{
+    width: 20%;
+    cursor: pointer;
+}
+.link{
+    cursor: pointer;
+}

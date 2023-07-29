@@ -1,0 +1,226 @@
+@import url('https://fonts.cdnfonts.com/css/literata');
+
+.centered-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E1FFCE;
+    border: 5px solid black;
+    border-radius: 40px;
+    margin-top: .5in;
+    width: 3.5in;
+    height: 4.5in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  
+}
+
+.box-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 55px 55px 0 0 ;
+    overflow: hidden;
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 5px solid black;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.section:last-child {
+    border-right: none;
+}
+
+.box-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+.box-content img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    
+}
+#connectBtn{
+    display: block;
+}
+.selected {
+    background-color: #6FFF31;
+}
+.selected-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+}
+.section:first-child.selected {
+    border-top-left-radius: 55px ;  
+
+}
+.section:last-child.selected {
+    border-top-right-radius: 55px;  
+   
+}
+#box{
+    height: 80%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    height: 70%; 
+    align-items: center;  
+  justify-content: space-between;
+  }
+  .container button {
+    position: absolute;
+    top: -30px; 
+    left: 0;
+    padding: 1px 2px; 
+    
+  }
+.token-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    height: 50%; 
+    overflow-y: scroll; 
+    padding: 10px;
+    scrollbar-width: thin; 
+    scrollbar-color: darkgrey transparent;
+  }
+  .token-holder::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  .token-holder::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .token-holder::-webkit-scrollbar-thumb {
+    background-color: darkgrey; 
+    border-radius: 20px;
+  }
+  .token-card {
+    width: 100%;
+    
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .token-card.selected {
+    border-radius: 20px;
+    background-color: rgb(0, 255, 38);
+  }
+  
+  .token-card img {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .token-id {
+    text-align: center;
+  }
+  .stakeButton {
+    border-radius: 20px;
+    font-weight: 900;
+   min-width: fit-content;
+    background-color: #6FFF31;
+    border-color: #6FFF31;
+    color: #000000;
+    box-shadow: 0px 5px 15px rgba(255, 229, 0, 0.6);
+    transition: all 0.3s ease 0s;
+    padding: .5em;
+    font-family: 'Literata', sans-serif;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                                                
+  }
+  
+  .stakeButton:active {
+    box-shadow: 0px 5px 15px rgba(255, 229, 0, 0.6);
+    transform: translateY(3px);
+  }
+  
+  #collectBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+
+  }
+#previewNFT{
+    width: 50%;
+    height: 40%;
+    margin-top: -15px;
+
+}
+#collectBox p{
+    font-size: 15px;
+    font-weight: 900;
+}
+#logoText{
+    width: 100%;
+    height:60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#logoText h6{
+    margin-left: -50px;
+    font-size: 15px;
+}
+#logoKiwi{
+    margin-left: -50px;
+    width: 50%;
+}
+#rewardsAccumulated, #claimButton {
+    width: 50%;
+    margin: 5px;
+    background-color: #6FFF31;
+    border-radius: 20px;
+    
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+  #unstakeBtn{
+    position: relative;
+    
+  }
+  #hmm{
+    cursor: pointer;
+  }

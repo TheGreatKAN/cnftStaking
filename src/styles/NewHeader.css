@@ -1,0 +1,37 @@
+@import url('https://fonts.cdnfonts.com/css/literata');
+#headerBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    
+    background-color: #0b210271;
+}
+.myImage {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+  }
+  #buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 30%;
+  }
+  #mintButton{
+    border-radius: 20px;
+    font-weight: 900;
+ width: 150px;
+ cursor: pointer;
+    background-color: #6FFF31;
+    border-color: #6FFF31;
+    color: #000000;
+    box-shadow: 0px 5px 15px rgba(255, 229, 0, 0.6);
+    transition: all 0.3s ease 0s;
+    padding: .5em;
+    font-family: 'Literata', sans-serif;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+           
+  }
+
